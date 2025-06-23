@@ -1,0 +1,46 @@
+.floating-orbs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.2;
+}
+
+.purple-orb {
+  width: 300px;
+  height: 300px;
+  background: var(--nb-secondary);
+}
+
+.blue-orb {
+  width: 400px;
+  height: 400px;
+  background: var(--nb-accent);
+  bottom: 0;
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .orb {
+    filter: blur(60px);
+  }
+  
+  .purple-orb {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .blue-orb {
+    width: 250px;
+    height: 250px;
+  }
+}
